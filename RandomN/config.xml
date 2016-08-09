@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://salvadorruedapau.com/RandomN" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="A7FXm35H9L.RandomN" package="A7FXm35H9L" required_version="2.2.1"/>
+    <author href="http://salvadorruedapau.com" email="salvador.rueda@gmail.com">Salvador Rueda Pau</author>
+    <content src="index.html"/>
+    <description>RandomN displays random numbers between 1 and a maxium value.</description>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="radomn1.png" height="117" width="117"/>
+    <name>RandomN</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting hwkey-event="enable"/>
+</widget>

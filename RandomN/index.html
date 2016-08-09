@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Contador</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ui-page" id="pageRotaryEvent" data-enable-page-scroll="false">
+   <header class="ui-header">
+      <h2 id="vInc" class="ui-title">+1</h2>
+   </header>
+   <div class="ui-content">
+      <div id="vCont">0</div>
+       <div>El Bisel cambia el incremento.</div>
+       <div>Toca aquí para contar</div>
+      <div  id="result" style="visibility:hidden"> </div>
+      			 
+      			 <div style="visibility:hidden"> 
+      			  <progress class="ui-circle-progress" id="circleprogress" max="100" value="20"></progress>
+      			  </div>   
+   </div>
+</div>
+	
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script src="app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+</body>
+</html>
+ -->
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="language.js"></script>
+	<script>
+	  function initl(){
+         // document.getElementById("vr").innerHTML=TIZEN_L10N["random"];
+          document.getElementById("vhelp1").innerHTML=TIZEN_L10N["help1"];
+         //document.getElementById("vhelp1").innerHTML="Usa el Bisel para cambiar el valor máximo del número aleatorio.";
+         
+          //document.getElementById("vInfo").innerHTML=TIZEN_L10N["info1"]+TIZEN_L10N["info2"];
+          }
+	</script>
+</head>
+<body onload="initl(); initv();">
+  <div class="ui-page" id="circularSectionchangerPage" id="pageRotaryEvent" data-enable-page-scroll="false">
+   <div id="pageIndicator" class="ui-page-indicator"></div>
+   <div id="circularSectionchanger" class="ui-content">
+	<div>
+		<section style="text-align:center">
+		 <h3> HELP </h3>		
+		 <div id="vhelp1"></div>
+		</section>
+
+		<section class="ui-section-active" style="text-align:center">
+		 <h3 id="vr"> RandomN </h3>
+           <div id="rValues">1 to 6</div>		 			
+           <div id="rInfo" style="font-weight:bold;"></div>
+           <div class="ui-content">
+            <div id="result" style="visibility:hidden"></div>       	   	      	 	 		 
+      	   <div style="visibility:hidden">   
+      	     <progress class="ui-circle-progress" id="circleprogress" max="100" value="0"></progress>   
+      	   </div>   			      
+          </div>							
+		</section>
+		
+	</div>
+  </div> 
+</div>
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	 <script type="text/javascript" src="js/circle-helper.js"></script> 	
+	<script src="lowBatteryCheck.js"></script>
+	    <script src="app.js"></script>
+	
+</body>
+</html>
+ 
